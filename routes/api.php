@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('export-data', function(){
+
+    echo "test";die;
+});
+
+
 // example data for the dashboard
 Route::middleware(['web', 'auth', 'multitenant'])
     ->namespace('Dashboard')
